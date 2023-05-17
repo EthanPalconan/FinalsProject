@@ -1,0 +1,165 @@
+import tkinter as tk
+from tkinter import filedialog
+
+window = tk.Tk()
+
+window.geometry("500x800")
+
+label = tk.Label(window, text="BrainBuddy", font=("arial", 20))
+label.pack()
+
+
+
+def start():
+    
+    course_window = tk.Toplevel(window)
+    course_window.title("Course Packs")
+    
+    def quiz():
+        
+        quiz_window = tk.Toplevel(course_window)
+        quiz_window.title("Quiz")
+
+        
+        quiz_label = tk.Label(quiz_window, text="Testing")
+        quiz_label.pack()
+
+        
+        choice1 = tk.Button(quiz_window, text="Correct", command=lambda: print("Correct!"))
+        choice2 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+        choice3 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+        choice4 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+
+        
+        choice1.pack()
+        choice2.pack()
+        choice3.pack()
+        choice4.pack()
+
+    
+    course1_button = tk.Button(course_window, text="Course pack 1", command=quiz)
+
+    
+    course1_button.pack()
+
+    def quiz():
+        
+        quiz_window = tk.Toplevel(course_window)
+        quiz_window.title("Quiz")
+
+        
+        quiz_label = tk.Label(quiz_window, text="Testing")
+        quiz_label.pack()
+
+        
+        choice1 = tk.Button(quiz_window, text="Correct", command=lambda: print("Correct!"))
+        choice2 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+        choice3 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+        choice4 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+
+        
+        choice1.pack()
+        choice2.pack()
+        choice3.pack()
+        choice4.pack()
+
+    
+    course2_button = tk.Button(course_window, text="Course pack 2", command=quiz)
+
+    
+    course2_button.pack()
+
+
+
+    def quiz():
+        
+        quiz_window = tk.Toplevel(course_window)
+        quiz_window.title("Quiz")
+
+        
+        quiz_label = tk.Label(quiz_window, text="Testing")
+        quiz_label.pack()
+
+        
+        choice1 = tk.Button(quiz_window, text="Correct", command=lambda: print("Correct!"))
+        choice2 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+        choice3 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+        choice4 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+
+        
+        choice1.pack()
+        choice2.pack()
+        choice3.pack()
+        choice4.pack()
+
+    
+    course3_button = tk.Button(course_window, text="Course pack 3", command=quiz)
+
+    
+    course3_button.pack()
+
+
+    def quiz():
+        
+        quiz_window = tk.Toplevel(course_window)
+        quiz_window.title("Quiz")
+
+        
+        quiz_label = tk.Label(quiz_window, text="Testing")
+        quiz_label.pack()
+
+        
+        choice1 = tk.Button(quiz_window, text="Correct", command=lambda: print("Correct!"))
+        choice2 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+        choice3 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+        choice4 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+
+        
+        choice1.pack()
+        choice2.pack()
+        choice3.pack()
+        choice4.pack()
+
+    
+    course4_button = tk.Button(course_window, text="Course pack 4", command=quiz)
+
+    
+    course4_button.pack()
+
+
+    def quiz():
+        
+        quiz_window = tk.Toplevel(course_window)
+        quiz_window.title("Quiz")
+
+        
+        quiz_label = tk.Label(quiz_window, text="Testing")
+        quiz_label.pack()
+
+        
+        choice1 = tk.Button(quiz_window, text="Correct", command=lambda: print("Correct!"))
+        choice2 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+        choice3 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+        choice4 = tk.Button(quiz_window, text="Wrong", command=lambda: print("Incorrect"))
+
+        
+        choice1.pack()
+        choice2.pack()
+        choice3.pack()
+        choice4.pack()
+
+    
+    course5_button = tk.Button(course_window, text="Course pack 5", command=quiz)
+
+    
+    course5_button.pack()
+
+
+start_button = tk.Button(window, text="Start", command=start)
+start_button.pack()
+
+
+
+
+
+window.mainloop()
